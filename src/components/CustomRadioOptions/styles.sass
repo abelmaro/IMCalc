@@ -1,0 +1,29 @@
+@import '../../constants/defaultStyles.sass'
+
+.radio-container
+    display: flex
+    gap: 1rem
+    justify-content: space-between
+    &__button
+        display: flex
+        padding: 0.5rem
+        justify-content: center
+        align-items: center
+        border-radius: $default-border-radius
+        cursor: pointer
+        width: 100%
+        min-width: 5.5rem
+        min-height: 1rem
+        gap: 0.5rem
+        text-transform: capitalize
+        font-size: $small-font-size
+        &--light
+            background-color: $background-color-light
+        &--dark
+            background-color: $background-color-dark
+            color: white
+        &__input
+            display: none
+        &.active
+            background-color: $default-text-color
+            color: white

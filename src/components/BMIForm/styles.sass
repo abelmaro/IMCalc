@@ -1,0 +1,54 @@
+@import '../../constants/defaultStyles.sass'
+
+.form
+    @include flex(column, 1rem)
+    font-family: 'Poppins-Light'
+    max-width: 400px
+    min-width: 400px
+    &__weight-container, &__height-container
+        @include flex(row, 1rem)
+        width: 400px
+    &__input
+        width: 100%
+        font-family: 'Poppins-Light'
+        padding: $default-padding
+        border-radius: $default-border-radius
+        font-size: $small-font-size
+        border: none
+        &--light
+            color: $default-text-color
+            background-color: $background-color-light
+            &::placeholder
+                color: $default-text-color
+        &--dark
+            color: #fbfbfb
+            background-color: $background-color-dark
+            &::placeholder
+                color: #fbfbfb
+    &__input-group
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        width: 100%
+    &__button
+        padding: $default-padding
+        border-radius: $default-border-radius
+        font-size: $medium-font-size
+        background-color: $background-color-light
+        cursor: pointer
+        font-family: 'Poppins-SemiBold'
+        color: $default-text-color
+        &:hover
+            background-color: #d7d7d7
+        &:disabled
+            cursor: not-allowed
+        &--light:disabled
+            background-color: #d7d7d7
+            color: #7e7e7e
+        &--dark:disabled
+            background-color: #515151
+            color: #131e2c
+    &__button--active
+        background-color: #d7d7d7
+        border: 1px solid #292929

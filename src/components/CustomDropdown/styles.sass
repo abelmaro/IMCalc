@@ -1,0 +1,26 @@
+@import '../../constants/defaultStyles.sass'
+
+.dropdown
+    font-family: 'Poppins-Light'
+    background-color: transparent
+    border: none
+    outline: none
+    cursor: pointer
+    height: 40px
+    border-radius: $default-border-radius
+    min-width: 120px
+    padding-left: 10px
+    &--dark
+        background-color: $background-color-dark
+        color: white
+    &--light
+        background-color: $background-color-light
+
+.dropdown__option
+    padding: 1rem
+    background-color: transparent
+    border: none
+    outline: none
+    cursor: pointer
+    &:hover
+        background-color: rgba(0, 0, 0, 0.1)

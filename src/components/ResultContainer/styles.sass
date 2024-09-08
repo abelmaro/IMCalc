@@ -1,0 +1,15 @@
+@import '../../constants/defaultStyles.sass'
+
+.result
+    @include flex(column, 0.5rem)
+    justify-content: space-between
+    align-items: center
+    &__title
+        font-family: 'Poppins-ExtraBold'
+        font-size: $medium-font-size
+        text-align: left
+        width: 100%
+    &__value
+        font-family: 'Poppins-ExtraLightItalic'
+        font-size: $big-font-size,
+        font-weight: 100

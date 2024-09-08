@@ -1,0 +1,30 @@
+@import './constants/defaultStyles.sass'
+
+*
+    box-sizing: border-box
+    user-select: none
+
+.container
+    @include flex
+    align-items: center
+    align-content: center
+    justify-content: space-evenly
+    height: 100vh
+    flex-wrap: wrap
+    &--light
+        background-color: #eeeef8
+    &--dark
+        background-color: #050c15
+    &__left h1
+        font-family: 'Poppins-ExtraBold'
+    &__left h2
+        font-family: 'Poppins-ExtraLightItalic'
+    &__left h1, &__left h2
+        margin: 0
+
+.container__right
+    &__title
+        font-family: 'Poppins-ExtraBold'
+        text-transform: uppercase
+        padding-bottom: 10px
+        font-size: $small-font-size

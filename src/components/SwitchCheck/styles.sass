@@ -1,0 +1,35 @@
+@import '../../constants/defaultStyles.sass'
+
+.switch
+    width: 70px
+    height: 40px
+    background-color: rgba(255, 255, 255, 0.4)
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    border-radius: 50px
+    cursor: pointer
+    padding: 5px
+    &--light
+        background-color: #faeab3
+    &--dark
+        background-color: #113546
+
+    &[data-ison="true"]
+        justify-content: flex-end
+
+    &__handle
+        width: 30px
+        height: 30px
+        background-color: $background-color-light
+        border-radius: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        &--light
+            background-color: #f1be42
+        &--dark
+            background-color: #2db3f0
+        & svg
+            font-size: $small-font-size
+            color: white
